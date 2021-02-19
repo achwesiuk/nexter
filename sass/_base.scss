@@ -43,7 +43,7 @@ body {
     // 2. auto - domyślne, jeżeli nic nie będzie określone; również dopasowuje się do treści
     // 3. wiersz - wiersz uzależniony od szerokości układu (podczas zmiany szerokości widoku zmieniają się wymiary wiersza - zwęża się, rośnie)
     // 4, 5, 6 - wysokość wiersza uzależnione od jego zawartości
-    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
     & > * { // wszystkie bezpośrednie dzieci
         padding: 4rem;
