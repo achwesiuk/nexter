@@ -1,0 +1,21 @@
+.features {
+    grid-column: center-start / center-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    //grid-template-rows: auto auto; niepotrzebne, ponieważ wiersze i tak układają się w ten sposób
+    grid-gap: 6rem;
+}
+
+.feature {
+
+    &__icon {
+
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

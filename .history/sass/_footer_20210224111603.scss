@@ -1,0 +1,12 @@
+footer {
+    background-color: $color-secondary;
+    grid-column: center-start / center-end;
+    padding: 8rem;
+}
+
+.nav {
+    list-style: none;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
